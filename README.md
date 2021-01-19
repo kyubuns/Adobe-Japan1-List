@@ -1,12 +1,12 @@
 # Adobe-Japan1-List
 
-- Adobe-Japan1-1 7698字
-- Adobe-Japan1-2 8044字
-- Adobe-Japan1-3 8044字
-- Adobe-Japan1-4 10023字
-- Adobe-Japan1-5 13697字
-- Adobe-Japan1-6 15750字
-- Adobe-Japan1-7 15752字
+- Adobe-Japan1-1 8069字
+- Adobe-Japan1-2 8417字
+- Adobe-Japan1-3 8417字
+- Adobe-Japan1-4 10448字
+- Adobe-Japan1-5 14128字
+- Adobe-Japan1-6 16181字
+- Adobe-Japan1-7 16183字
 
 ## その他
 
