@@ -68,5 +68,5 @@ foreach (var (name, range) in output)
         .ToArray();
     var rawText = string.Join("", targets);
     File.WriteAllText($"{name}.txt", rawText);
-    Console.WriteLine($"{name} {targets.Count()}");
+    Console.WriteLine($"- {name} {targets.Count()}字");
 }
