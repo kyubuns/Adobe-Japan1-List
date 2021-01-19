@@ -43,7 +43,11 @@ foreach (var (name, range) in output)
 {
     var targets = data
         .Where(x => range.Item1 <= int.Parse(x["CID"]) && int.Parse(x["CID"]) <= range.Item2)
-        .Select(x => x["UniJIS-UTF32"].Split(",")[0])
+        .SelectMany(x =>
+        {
+            // Console.WriteLine($"{x["CID"]}, {x["UniJIS-UTF32"]}");
+            return x["UniJIS-UTF32"].Split(",");
+        })
         .Where(x => x != "*")
         .Select(x => x.Replace("v", ""))
         .Select(x =>
@@ -55,7 +59,12 @@ foreach (var (name, range) in output)
             }
             return bytes.ToArray();
         })
-        .Select(x => Encoding.UTF32.GetString(x))
+        .Select(x =>
+        {
+            var a = Encoding.UTF32.GetString(x);
+            // Console.WriteLine($" -> {a}");
+            return a;
+        })
         .ToArray();
     var rawText = string.Join("", targets);
     File.WriteAllText($"{name}.txt", rawText);
