@@ -8,5 +8,13 @@
 - Adobe-Japan1-6 15750字
 - Adobe-Japan1-7 15752字
 
+## その他
+
 - https://github.com/adobe-type-tools/Adobe-Japan1/blob/master/README-JP.md
 - Source: https://github.com/adobe-type-tools/cmap-resources/
+
+## メモ
+
+### この漢字、どこに入ってる？
+
+`git grep --files-with-matches '義'`
