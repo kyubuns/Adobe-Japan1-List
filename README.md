@@ -1,5 +1,6 @@
 # Adobe-Japan1-List
 
+- Adobe-Japan0 8017字
 - Adobe-Japan1-1 8069字
 - Adobe-Japan1-2 8417字
 - Adobe-Japan1-3 8417字

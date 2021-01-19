@@ -9,6 +9,7 @@ using System.Text.RegularExpressions;
 var lines = File.ReadAllText("generator/cid2code.txt").Split('\n');
 var output = new (string, (int, int))[]
 {
+    ("Adobe-Japan0", (0, 8283)),
     ("Adobe-Japan1-1", (0, 8358)),
     ("Adobe-Japan1-2", (0, 8719)),
     ("Adobe-Japan1-3", (0, 9353)),
