@@ -10,6 +10,7 @@ var lines = File.ReadAllText("generator/cid2code.txt").Split('\n');
 var output = new (string, (int, int))[]
 {
     ("Adobe-Base", (0, 1124)),
+
     ("Adobe-Japan0", (0, 8283)),
     ("Adobe-Japan1-1", (0, 8358)),
     ("Adobe-Japan1-2", (0, 8719)),
@@ -18,6 +19,15 @@ var output = new (string, (int, int))[]
     ("Adobe-Japan1-5", (0, 20316)),
     ("Adobe-Japan1-6", (0, 23057)),
     ("Adobe-Japan1-7", (0, 23059)),
+
+    ("Adobe-Japan0-WithoutBase", (1125, 8283)),
+    ("Adobe-Japan1-1-WithoutBase", (1125, 8358)),
+    ("Adobe-Japan1-2-WithoutBase", (1125, 8719)),
+    ("Adobe-Japan1-3-WithoutBase", (1125, 9353)),
+    ("Adobe-Japan1-4-WithoutBase", (1125, 15443)),
+    ("Adobe-Japan1-5-WithoutBase", (1125, 20316)),
+    ("Adobe-Japan1-6-WithoutBase", (1125, 23057)),
+    ("Adobe-Japan1-7-WithoutBase", (1125, 23059)),
 };
 
 var header = new string[]{};
